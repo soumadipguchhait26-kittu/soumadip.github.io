@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Academic Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 id="user-name" class="text-3xl sm:text-4xl font-extrabold text-gray-900">Dr. Jane Doe</h1>
+                <p id="user-affiliation" class="text-lg sm:text-xl text-gray-500">Postdoctoral Researcher in Computer Science</p>
+            </div>
+            <nav>
+                <ul class="flex space-x-4 sm:space-x-6 text-gray-600 font-medium">
+                    <li><a href="#about" class="hover:text-gray-900 transition-colors">About</a></li>
+                    <li><a href="#research" class="hover:text-gray-900 transition-colors">Research</a></li>
+                    <li><a href="#contact" class="hover:text-gray-900 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Hero/Profile Section -->
+        <section id="about" class="bg-white rounded-lg shadow-sm p-6 sm:p-8 mb-8 flex flex-col md:flex-row items-center gap-6">
+            <!-- To change your picture, replace the image URL in the `src` attribute below -->
+            <img id="profile-picture" src="https://placehold.co/200x200/e2e8f0/64748b?text=Your+Photo" alt="Profile picture of Dr. Jane Doe" class="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-gray-200">
+            <div class="text-center md:text-left">
+                <!-- To change your biography, replace the text inside the <p> tag -->
+                <p id="biography" class="text-gray-700 leading-relaxed">
+                    I am a postdoctoral researcher with a passion for machine learning and its applications in healthcare. My work focuses on developing novel algorithms for medical image analysis and building robust, explainable AI systems. I completed my Ph.D. at XYZ University and have been a researcher for over five years. I'm always looking for new challenges and opportunities to collaborate on projects that make a real-world impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Research/Publications Section -->
+        <section id="research" class="bg-white rounded-lg shadow-sm p-6 sm:p-8 mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Research & Publications</h2>
+            <div class="space-y-6">
+                <!-- To add a new publication, copy the entire block below and paste it for a new entry -->
+                <div class="border-b last:border-b-0 pb-4">
+                    <h3 id="pub-title-1" class="text-xl font-semibold text-gray-800">"A Novel Approach to AI-Driven Medical Image Classification"</h3>
+                    <p id="pub-journal-1" class="text-gray-600 italic">Journal of Medical AI, Vol. 10, Issue 2</p>
+                    <p id="pub-authors-1" class="text-sm text-gray-500">Jane Doe, John Smith, Alice Johnson</p>
+                    <p id="pub-link-1" class="text-sm mt-2"><a href="https://example.com/publication-link-1" class="text-blue-600 hover:underline">Read the full paper</a></p>
+                </div>
+                <!-- You can add more publications by copying the block above -->
+                <div class="border-b last:border-b-0 pb-4">
+                    <h3 id="pub-title-2" class="text-xl font-semibold text-gray-800">"Machine Learning for Predictive Healthcare Diagnostics"</h3>
+                    <p id="pub-journal-2" class="text-gray-600 italic">International Conference on Machine Learning</p>
+                    <p id="pub-authors-2" class="text-sm text-gray-500">Jane Doe, Bob Miller</p>
+                    <p id="pub-link-2" class="text-sm mt-2"><a href="https://example.com/publication-link-2" class="text-blue-600 hover:underline">Read the full paper</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-lg shadow-sm p-6 sm:p-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 border-b pb-2">Contact</h2>
+            <div class="space-y-4 text-gray-700">
+                <!-- To change your email address, replace the 'your-email@example.com' placeholder -->
+                <p><strong>Email:</strong> <a href="mailto:your-email@example.com" class="text-blue-600 hover:underline">your-email@example.com</a></p>
+                <!-- To change your social media links, replace the URLs -->
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" class="text-blue-600 hover:underline" target="_blank">linkedin.com/in/yourprofile</a></p>
+                <p><strong>Twitter:</strong> <a href="https://twitter.com/yourhandle" class="text-blue-600 hover:underline" target="_blank">twitter.com/yourhandle</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-400">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
